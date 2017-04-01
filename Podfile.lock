@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Kingfisher (3.5.2)
+  - LFLiveKit (2.6)
+  - Masonry (1.0.2)
+  - SnapKit (3.2.0)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4.0)
+  - Kingfisher (~> 3.5.2)
+  - LFLiveKit (~> 2.6)
+  - Masonry (~> 1.0.2)
+  - SnapKit (~> 3.2.0)
+  - SVProgressHUD (~> 2.1.2)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
+  LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: 06fad099fd12a628c284a7956ef812e12a8fe8de
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CollectionHeaderView" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j84-Uj-xaf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Mbx-fp-2k2"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_hot" translatesAutoresizingMaskIntoConstraints="NO" id="v0t-BZ-S4v">
+                    <rect key="frame" x="10" y="21" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="YLQ-aS-SCp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-qD-X8G">
+                    <rect key="frame" x="33" y="20" width="33" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xys-Qy-f01">
+                    <rect key="frame" x="250" y="15" width="60" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="6dZ-Ar-zhv"/>
+                    </constraints>
+                    <state key="normal" title="更多&gt;">
+                        <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Xys-Qy-f01" secondAttribute="bottom" constant="5" id="R0j-N3-cdk"/>
+                <constraint firstItem="6o7-qD-X8G" firstAttribute="centerY" secondItem="v0t-BZ-S4v" secondAttribute="centerY" id="R5n-Gw-Rcf"/>
+                <constraint firstItem="Xys-Qy-f01" firstAttribute="top" secondItem="j84-Uj-xaf" secondAttribute="bottom" constant="5" id="STi-LK-jT5"/>
+                <constraint firstItem="j84-Uj-xaf" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="TGY-Jd-haQ"/>
+                <constraint firstAttribute="trailing" secondItem="j84-Uj-xaf" secondAttribute="trailing" id="U4c-dE-3sk"/>
+                <constraint firstItem="6o7-qD-X8G" firstAttribute="leading" secondItem="v0t-BZ-S4v" secondAttribute="trailing" constant="5" id="Vku-Qg-FKw"/>
+                <constraint firstAttribute="trailing" secondItem="Xys-Qy-f01" secondAttribute="trailing" constant="10" id="Vo9-lG-f7w"/>
+                <constraint firstItem="v0t-BZ-S4v" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="Voa-7p-FV5"/>
+                <constraint firstItem="j84-Uj-xaf" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="aTs-Mz-9xC"/>
+                <constraint firstItem="v0t-BZ-S4v" firstAttribute="top" secondItem="j84-Uj-xaf" secondAttribute="bottom" constant="11" id="y84-g6-Lfd"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="v0t-BZ-S4v" id="NJa-Lf-4qs"/>
+                <outlet property="moreBtn" destination="Xys-Qy-f01" id="btK-cY-uyz"/>
+                <outlet property="titleLabel" destination="6o7-qD-X8G" id="ISr-tV-sip"/>
+            </connections>
+            <point key="canvasLocation" x="-96" y="-75"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_header_hot" width="18" height="18"/>
+    </resources>
+</document>
